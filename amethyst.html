@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="3DCG作品「Amethyst Resonance」の制作事例です。目的と、モデリングやテクスチャリング、ライティング、アニメーション制作などの制作プロセス、獲得した学びまでを紹介しています。">
+<meta name="keywords" content="Amethyst Resonance,3DCG,POV-Ray,レイトレーシング,モデリング,テクスチャリング,ライティング,アニメーション,五賀健太,ポートフォリオ">
+<meta name="author" content="五賀健太">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="img/favicon.ico">
+<title>GOGA TAKEHIRO | Amethyst Resonance</title>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <header class="header">
+    <a href="profile.html" class="header__logo">
+      <span class="header__logo--accent">G</span>OGA
+      <span class="header__logo--accent">T</span>AKEHIRO
+    </a>
+    <nav class="header__nav" aria-label="メインナビゲーション" role="navigation">
+      <ul class="header__nav-list">
+        <li><a href="works.html" class="header__nav-link">作品集</a></li>
+        <li><a href="profile.html" class="header__nav-link">プロフィール</a></li>
+        <li><a href="learning.html" class="header__nav-link">学習</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article>
+      <section class="case-hero">
+        <div class="case-hero__intro">
+          <p class="case-hero__eyebrow">レイトレーシングで神秘の世界観を演出する3DCG作品</p>
+          <h1 class="intro__title">「Amethyst Resonance」</h1>
+          <p class="body-text">
+            2年次前期の授業「コンピュータグラフィックス基礎」で個人制作した3DCG作品です。レイトレーシングによる光の動きを活かし、自分自身の感性で神秘的な世界観を表現しています。
+          </p>
+          <p class="body-text">
+            制作はプログラミングで行っています。全体で40時間以上を要しました。
+          </p>
+
+          <hr class="divider">
+
+          <div class="tool-box">
+            <p class="tool-box__title">使用ツール</p>
+            <ul class="skills-list">
+              <li class="skill-badge">POV-Ray</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case-hero__media">
+          <div class="top-bottom__center">
+            <img src="img/amethyst-animation.gif" alt="Amethyst Resonanceの完成品" class="amethyst__top-img">
+          </div>
+          <a href="https://github.com/Takehiro-Goga/amethyst/blob/main/amethyst.pov" target="_blank" rel="noopener noreferrer" class="btn btn--cta btn__hero--cta">コードを見る</a>
+        </div>
+      </section>
+
+      <section class="purpose-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>目的</h2>
+        <p class="body-text">
+          POV-Rayには光の動きをコンピューターで計算し、リアルな表現をするレイトレーシングが可能であるため、それをより活かせる作品を制作したいと考えました。レイトレーシングを活かすためには、光を反射する物を表現する必要があるため、アメジストをテーマとして制作に取り掛かりました。
+        </p>
+        <p class="body-text">
+          プログラミングによる3DCG制作は未経験であったため、制作を通してプログラミングによる基本的なCG表現の仕組みを理解することを目的として掲げました。
+        </p>
+      </section>
+
+      <hr class="divider">
+
+      <section class="process-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>制作プロセス</h2>
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>1.モデリング</h3>
+          <ul class="three-row-grid">
+            <li><img src="img/amethyst-modeling1.png" alt="モデリングの過程1" class="three-row-image-grid"></li>
+            <li><img src="img/amethyst-modeling2.png" alt="モデリングの過程2" class="three-row-image-grid"></li>
+            <li><img src="img/amethyst-modeling3.png" alt="モデリングの過程3" class="three-row-image-grid"></li>
+          </ul>
+          <p class="body-text body-text--no-indent work-content">
+            アメジストは、積集合で不規則な形の欠片を作り、それらを複数作成して統合することでモデリングしています。他のオブジェクトに関しては、トーラスやスフィアなどの基本的な図形を自分の感性によって変形・配置し、神秘的な世界観を構築しています。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>2.テクスチャリング</h3>
+          <img src="img/amethyst-texturing.png" alt="テクスチャリング" class="single-image work-content">
+          <p class="body-text body-text--no-indent work-content">
+            アメジストには、神秘のエネルギーを感じるテクスチャを採用しました。しかし、このテクスチャは光をあまり反射しないため、当初の「レイトレーシングを活かす」という目的が達成されないことに気づきました。そのため、他のオブジェクトにガラステクスチャを採用することで、神秘的な世界観を演出するとともに、レイトレーシングを活かせるテクスチャリングを施しています。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>3.ライティング</h3>
+          <img src="img/amethyst-lighting.png" alt="ライティング" class="single-image work-content">
+          <p class="body-text body-text--no-indent work-content">
+            レイトレーシングによる光の反射を最大限に表現するため、背景を黒にして、全体に強い紫の光を当てています。こうすることで、透明なガラステクスチャが光を反射し、紫色に光っているように見えます。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>4.アニメーション作成</h3>
+          <img src="img/amethyst-before.gif" alt="アニメーション" class="single-image work-content amethyst-animation">
+          <p class="body-text body-text--no-indent work-content">
+            光の反射が変化する様子を表現したいと考え、アメジストの横にあるスフィアを公転させ、動きを加えました。プログラミングによって作成しているため、正確に公転させることに苦戦しましたが、試行錯誤を重ねて何とか実現することができました。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>5.改善</h3>
+          <div class="two-row-image-grid-with-heading work-content">
+            <div>
+              <p class="two-row-image-grid-with-heading__label">Before</p>
+              <img src="img/amethyst-before.gif" alt="改善前" class="two-row-image-grid-with-heading__thumb two-row-image-grid-with-heading__thumb--amethyst-animation">
+            </div>
+            <div>
+              <p class="two-row-image-grid-with-heading__label">After</p>
+              <img src="img/amethyst-animation.gif" alt="改善後" class="two-row-image-grid-with-heading__thumb two-row-image-grid-with-heading__thumb--amethyst-animation">
+            </div>
+          </div>
+          <p class="body-text body-text--no-indent work-content">
+            アメジストからスフィアが大量に発散する様子を表現したいと考え、スフィアの数を増やしました。また、アニメーションの速度を調整し、理想の世界観により近づけました。
+          </p>
+          <a href="https://github.com/Takehiro-Goga/amethyst/blob/main/amethyst.pov" target="_blank" rel="noopener noreferrer" class="btn btn--cta work-content">コードを見る</a>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section class="learnings-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>獲得した学び</h2>
+        <p class="body-text">
+          プログラミングによるCG制作を初めて経験し、その基本的な仕組みを理解することができました。
+        </p>
+        <p class="body-text">
+          モデラーと違い、コーディングの確認をするために、その都度結果を出力する必要があり、直感的に操作できない点に難しさを感じました。特に、オブジェクトの座標の概念を理解するのに時間がかかりました。しかし、試行錯誤の結果、3Dにおけるオブジェクトの位置関係を深く理解することができました。また、制作を通して自分の感性を形にする力を養うことができたと考えています。
+        </p>
+        <p class="body-text">
+          今後は更にCG制作スキルを向上させるため、2年次後期には「コンピュータグラフィックス演習」を履修し、より高度なプログラミングや、CGコンテンツを利用したWebページの作成技術について学習していきたいです。
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <h2 class="heading contact-heading">お問い合わせ</h2>
+    <ul class="contact__list">
+      <li>
+        <a href="mailto:takenonakakarabanbuugt83@gmail.com" class="btn contact-btn">
+          <img src="img/mail-icon.png" alt="" class="contact-btn__icon">
+          メール
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Wantedlyのページを見る">
+          <img src="img/wantedly-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Vivivitのページを見る">
+          <img src="img/vivivit-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <a href="#top" class="btn top-link">トップへ</a>
+</body>
+</html>

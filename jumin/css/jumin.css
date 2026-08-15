@@ -1,0 +1,354 @@
+@charset "UTF-8";
+
+/*全体*/
+body{
+    padding: 30px 20px 10px 20px;/*ノッチやパンチホールを考慮*/
+    font-family: "Noto Sans JP";
+    background-color: #f7f7f7;
+    animation: fadein 1s ease;/*安心感のある動きにする*/
+}
+*{
+    box-sizing: border-box;
+}
+@keyframes fadein{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+/*ボタン効果*/
+.navi-bar:active{
+    transform: translateY(1px);
+    background-color: #0c5fc7;/*押した感覚を抱かせる*/
+}
+.conbini1:active,
+.conbini2:active,
+.madoguchi1:active,
+.yuso1:active,
+.under-button:active{
+    transform: translateY(1px);
+    background-color: #cddbf2;
+}
+
+/*ロゴ*/
+#logo-parent{
+    text-align: center;
+}
+#logo{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d6be5;
+    text-align: center;
+    border: 1px solid #0d6be5;
+    display: inline-flex;
+    padding: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}/*行政系サイトであるため、ロゴも画像は使わずシンプルに*/
+
+/*ナビゲーションバー*/
+.navi-container{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+.navi-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    padding: 13px;
+    background-color: #0d6be5;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    line-height: 1;
+}
+
+/*フローチャート*/
+.flow{
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-rows: 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr;
+    margin-top: 10px;
+}
+.flow > div{
+    display: grid;
+    place-items: center;
+}
+.q1{
+    background-color: #ffffff;
+    grid-area: 1/1/2/2;
+    padding: 13px;
+    font-size: 100px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+}
+.q2{
+    background-color: #ffffff;
+    grid-area: 3/1/4/2;
+    padding: 10px;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+}
+.q3{
+    background-color: #ffffff;
+    grid-area: 5/1/6/2;
+    padding: 13px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+}
+.conbini1{
+    background-color: #e8f0fe;
+    grid-area: 1/3/2/4;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d6be5;
+    border: 2px solid #ff8a00;/*アクセントカラーで視線を誘導*/
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 8px 5px rgba(0,0,0,0.3);/*ボタンであることを認知しやすくする*/
+}
+.conbini2{
+    background-color: #e8f0fe;
+    grid-area: 3/3/4/4;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d6be5;
+    border: 2px solid #ff8a00;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 8px 5px rgba(0,0,0,0.3);
+}
+.madoguchi1{
+    background-color: #e8f0fe;
+    grid-area: 5/3/6/4;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d6be5;
+    border: 2px solid #ff8a00;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 8px 5px rgba(0,0,0,0.3);
+}
+.yuso1{
+    background-color: #e8f0fe;
+    grid-area: 7/1/8/2;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d6be5;
+    border: 2px solid #ff8a00;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 8px 5px rgba(0,0,0,0.3);
+}
+.yes1{
+    grid-area: 1/2/2/3;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    line-height: 1;
+}
+.yes2{
+    grid-area: 3/2/4/3;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    line-height: 1;
+}
+.yes3{
+    grid-area: 5/2/6/3;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    line-height: 1;
+}
+.no1{
+    grid-area: 2/1/3/2;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.no2{
+    grid-area: 4/1/5/2;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.no3{
+    grid-area: 6/1/7/2;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+/*下部ボタン*/
+.under-container{
+    display: block;
+    width: 100%;
+    padding-bottom: 1px;
+    justify-content: center;
+}
+.under-button{
+    text-align: center;
+    display: block;
+    padding: 13px;
+    background-color: #e8f0fe;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d6be5;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/*著作権*/
+footer{
+    font-size: 16px;
+    color: #b3b3b3;
+    text-align: center;
+}
+
+/*見出し*/
+h1{
+    font-size: 21px;
+    font-weight: 500;
+    color: #0d6be5;
+    margin: 0;
+}
+h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0d6be5; 
+}
+
+/*テキスト*/
+.normal-text{
+    font-size: 16px;
+    color: #333;/*#000よりも低刺激に*/
+    line-height: 2.5;
+    margin: 0;
+}
+section .normal-text:last-child{
+    margin-bottom: 50px;
+}
+.list{
+    font-size: 16px;
+    color: #333;
+    line-height: 2.5;
+}
+section .list:last-child{
+    margin-bottom: 50px;
+}
+.gaiyou{
+    font-size: 16px;
+    color: #333;
+    line-height: 2.5;
+    margin-bottom: 80px;
+}
+
+/*比較表*/
+table{
+    font-size: 16px;
+    width: 100%;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    border: 2px solid #333;
+}
+.table-head{
+    font-weight: 500;
+    color: #1e1e1e;
+    background-color: #d2e3fc;
+    padding: 13px;
+}
+.table-normal{
+    color: #333;
+    text-align: center;
+    padding: 13px;
+    background-color: #e1edfe;
+}
+
+/*補足*/
+.aside{
+    font-size: 16px;
+    color: #929292;/*補足情報であるため、控えめに*/
+    line-height: 2.5;
+}
+.aside:last-child{
+    margin-bottom: 50px;
+}
+
+/* PC対応 */
+@media screen and (min-width: 768px) {
+body {
+    max-width: 800px;/*広がりすぎると見づらいため、ある程度で固定*/
+    margin: 0 auto;
+}
+
+.navi-container,
+.flow,
+.table{
+    max-width: 800px;
+}
+
+.navi-bar:hover{
+    transform: translateY(-1px);
+    background-color: #0c5dc7;
+    box-shadow: 0px 8px 4px rgba(0,0,0,0.3);
+}
+
+.conbini1:hover,
+.conbini2:hover,
+.madoguchi1:hover,
+.yuso1:hover{
+    transform: translateY(-1px);
+    background-color: #cddbf2;
+}
+
+.under-button:hover{
+    transform: translateY(-1px);
+    background-color: #cddbf2;
+    box-shadow: 0px 8px 4px rgba(0,0,0,0.3);
+}
+}

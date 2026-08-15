@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="アクションゲーム「学内清掃」の制作事例です。目的と、ゲーム設計やUIデザイン、グラフィックデザイン、サウンドデザインなどの制作プロセス、獲得した学びまでを紹介しています。">
+<meta name="keywords" content="学内清掃,アクションゲーム,ゲーム制作,Clickteam Fusion 2.5,CF2.5,UI/UXデザイン,ノーコード,作品,グラフィックデザイン,サウンドデザイン,五賀健太,ポートフォリオ">
+<meta name="author" content="五賀健太">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="img/favicon.ico">
+<title>GOGA TAKEHIRO | 学内清掃</title>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <header class="header">
+    <a href="profile.html" class="header__logo">
+      <span class="header__logo--accent">G</span>OGA
+      <span class="header__logo--accent">T</span>AKEHIRO
+    </a>
+    <nav class="header__nav" aria-label="メインナビゲーション" role="navigation">
+      <ul class="header__nav-list">
+        <li><a href="works.html" class="header__nav-link">作品集</a></li>
+        <li><a href="profile.html" class="header__nav-link">プロフィール</a></li>
+        <li><a href="learning.html" class="header__nav-link">学習</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article>
+      <section class="case-hero">
+        <div class="case-hero__intro">
+          <p class="case-hero__eyebrow">UI/UXを重視したアクションゲーム作品</p>
+          <h1 class="intro__title">「学内清掃」</h1>
+          <p class="body-text">
+            2年次前期の授業「ゲーム制作基礎」で個人制作したアクションゲームです。猛暑の中、清掃員が定時退勤のプレッシャーを抱えながら、大学のキャンパスを清掃するゲームです。
+          </p>
+          <p class="body-text">
+            ノーコード開発ツールを使用し、プログラミングを行わずに制作しています。制作全体で70時間以上を要しました。
+          </p>
+
+          <hr class="divider">
+
+          <div class="tool-box">
+            <p class="tool-box__title">使用ツール</p>
+            <ul class="skills-list">
+              <li class="skill-badge">Clickteam Fusion 2.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case-hero__media">
+          <div class="top-bottom__center">
+            <ul class="hero-gallery-normal">
+              <li class="hero-gallery__item"><img src="img/game-thumb.png" alt="学内清掃のタイトル画面" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/cleaning-explanation.png" alt="学内清掃の説明画面" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/cleaning-play.png" alt="学内清掃のプレイ画面" class="hero-gallery__img"></li>
+            </ul>
+          </div>
+          <div class="hero-cta-group">
+            <a href="#" class="btn btn--cta btn__hero--cta">現物を見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="purpose-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>目的</h2>
+        <p class="body-text">
+          インターネット上に公開されている、ノーコード開発ツールによって作成されたゲームをプレイした際に、物を吸い込むゲームシステムに魅力を感じ、自分自身もそのようなゲームシステムを中心としたゲームを制作したいと考えました。
+        </p>
+        <p class="body-text">
+          ゲーム制作においてもUI/UXは重要であるため、世界観やグラフィック、内部処理などの様々な要素をプレイヤー目線でデザインすることで、自分自身のUI/UXデザインのスキルアップを目的として掲げました。
+        </p>
+      </section>
+
+      <hr class="divider">
+
+      <section class="process-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>制作プロセス</h2>
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>1. ゲーム設計</h3>
+          <div class="work-grid work-grid--three">
+            <div class="work-grid__col">
+              <p class="work-grid__title">ゲームルール</p>
+              <div class="top-bottom__center">
+                <p class="work-grid__desc">一定量のゴミを制限時間内に拾うと、ゲームクリア</p>
+              </div>
+            </div>
+            <div class="work-grid__col">
+              <p class="work-grid__title">操作仕様</p>
+              <div class="top-bottom__center">
+                <ul class="work-grid__list">
+                  <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>上下左右矢印キー：移動</li>
+                  <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>スペースキー：拾う</li>
+                </ul>
+              </div>
+            </div>
+            <div class="work-grid__col">
+              <p class="work-grid__title">画面構成</p>
+              <div class="top-bottom__center">
+                <ol class="ordered-list">
+                  <li>タイトル画面</li>
+                  <li>プレイ画面</li>
+                  <li>ゲームオーバー画面</li>
+                  <li>ゲームクリア画面</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <p class="body-text body-text--no-indent work-content">
+            プレイヤーの認知負荷を抑えるため、無駄を省くことで全体的にシンプルな設計になっています。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>2. UIデザイン</h3>
+          <div class="work-grid work-grid--three">
+            <div class="work-grid__col">
+              <div class="work-card__thumb">
+                <img src="img/cleaning-cta.png" alt="ゲームスタートのCTA" class="work-grid__thumb">
+              </div>
+              <div class="work-card__body">
+                <p class="work-grid__title">CTA</p>
+                <p class="work-grid__desc">ゲームスタート・終了のためのキーを説明するテキストの色には、行動を施す色であるブルーを採用しています</p>
+              </div>
+            </div>
+            <div class="work-grid__col">
+              <div class="work-card__thumb">
+                <img src="img/cleaning-gage.png" alt="重量ゲージ" class="work-grid__thumb">
+              </div>
+              <div class="work-card__body">
+                <p class="work-grid__title">重量ゲージ</p>
+                <p class="work-grid__desc">重量をゲージで表示することにより、プレイヤーが直感的に理解できるようにしています</p>
+              </div>
+            </div>
+            <div class="work-grid__col">
+              <div class="work-card__thumb">
+                <img src="img/cleaning-result.png" alt="結果重量表示" class="work-grid__thumb">
+              </div>
+              <div class="work-card__body">              
+                <p class="work-grid__title">結果重量</p>
+                <p class="work-grid__desc">ゲームオーバー画面に結果重量を表示することで、再びプレイする際の参考にできるようにしています</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>3. グラフィックデザイン</h3>
+          <div class="two-row-image-grid-with-heading work-content">
+            <div>
+              <p class="two-row-image-grid-with-heading__label">タイトル画面</p>
+              <img src="img/cleaning-title.png" alt="タイトル画面" class="two-row-image-grid-with-heading__thumb">
+            </div>
+            <div>
+              <p class="two-row-image-grid-with-heading__label">プレイ画面</p>
+              <img src="img/cleaning-play.png" alt="プレイ画面" class="two-row-image-grid-with-heading__thumb">
+            </div>
+            <div>
+              <p class="two-row-image-grid-with-heading__label">ゲームクリア画面</p>
+              <img src="img/cleaning-clear.png" alt="ゲームクリア画面" class="two-row-image-grid-with-heading__thumb">
+            </div>
+            <div>
+              <p class="two-row-image-grid-with-heading__label">ゲームオーバー画面</p>
+              <img src="img/cleaning-gameover.png" alt="ゲームオーバー画面" class="two-row-image-grid-with-heading__thumb">
+            </div>
+          </div>
+          <p class="body-text work-content">
+            ゲームシステムがシンプルであるため、高画質のグラフィックにすると違和感が生じることから、全体的にドット絵で統一しています。また、テキストを明朝体で統一することにより、大学の雰囲気を演出しています。
+          </p>
+          <p class="body-text work-content">
+            仕様・操作説明画面は、求人票をイメージしてデザインすることで、没入感を向上させています。他の画面では、背景で時間の変化を表現しています。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>4. サウンドデザイン</h3>
+          <div class="work-grid">
+            <div class="work-grid__col">
+              <p class="work-grid__title">BGM</p>
+              <ul class="work-grid__list">
+                <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>タイトル画面と仕様・操作説明画面では、チャイムの音を設定することで、大学の雰囲気を演出しています</li>
+                <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>ゲーム画面では、ミンミンゼミの鳴き声を設定することで、夏の暑さを演出しています</li>
+                <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>ゲームオーバー画面では、ヒグラシの鳴き声を設定することで、虚しさを演出しています</li>
+              </ul>
+            </div>
+            <div class="work-grid__col">
+              <p class="work-grid__title">効果音</p>
+              <div class="top-bottom__center">
+                <p class="work-grid__desc">ゲーム開始時やゲームオーバー・クリア時、ゴミを拾う時に適切な効果音を再生することにより、プレイヤーが爽快感と没入感を抱けるようにしています</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>5. 改善</h3>
+          <div class="two-row-image-grid-with-heading work-content">
+            <div>
+              <p class="two-row-image-grid-with-heading__label">Before</p>
+              <img src="img/cleaning-title.png" alt="改善前のタイトル画面" class="two-row-image-grid-with-heading__thumb">
+            </div>
+            <div>
+              <p class="two-row-image-grid-with-heading__label">After</p>
+              <img src="img/game-thumb.png" alt="改善後のタイトル画面" class="two-row-image-grid-with-heading__thumb">
+              <img src="img/cleaning-explanation.png" alt="改善後の説明画面" class="two-row-image-grid-with-heading__thumb two-row-image-grid-with-heading__under-thumb">
+            </div>
+          </div>
+          <p class="body-text body-text--no-indent work-content">
+            タイトル画面に説明を記載すると情報過多になってしまうと考えたため、タイトル画面と説明を別の画面に分け、タイトル画面をシンプルにしました。
+          </p>
+          <a href="#" class="btn btn--cta">現物を見る</a>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section class="learnings-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>獲得した学び</h2>
+        <p class="body-text">
+          ゲーム制作における様々な要素をプレイヤー目線でデザインすることにより、プレイヤーが快適に、気持ち良くプレイできるゲームデザインについて、深く理解することができました。
+        </p>
+        <p class="body-text">
+          ゲーム制作のプロセスを俯瞰すると、Web制作と同様にUI/UXデザインが非常に重要であることが分かり、それぞれの段階で有意義な経験をすることができました。特にUIデザインの段階では、プレイヤーを迷わせないデザインを考えることで、UI/UXデザインのスキルアップに繋がったと考えています。また、ゲームの内部処理を実装することで、フロントエンドエンジニアに欠かせない、イベント駆動の思考を身につけることができました。
+        </p>
+        <p class="body-text">
+          今回の制作では、自分のキャリアに関わる力を大いに養うことができました。得た学びを活かし、今後はUI/UXデザインのスキルをさらに向上させた上でプログラミングについても学習することで、UI/UXデザインへの理解が深い学生として、フロントエンドエンジニアを目指していきたいと考えています。
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <h2 class="heading contact-heading">お問い合わせ</h2>
+    <ul class="contact__list">
+      <li>
+        <a href="mailto:takenonakakarabanbuugt83@gmail.com" class="btn contact-btn">
+          <img src="img/mail-icon.png" alt="" class="contact-btn__icon">
+          メール
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Wantedlyのページを見る">
+          <img src="img/wantedly-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Vivivitのページを見る">
+          <img src="img/vivivit-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <a href="#top" class="btn top-link">トップへ</a>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="住民票取得方法案内サイト「住民票取得アシスト」の制作事例です。目的と、ユーザー理解やUI設計、コーディングなどのデザインプロセス、獲得した学びまでを紹介しています。">
+<meta name="keywords" content="住民票取得アシスト,UI/UXデザイン,Webデザイン,Web制作,Webサイト,デザインプロセス,Figma,HTML,CSS,五賀健太,ポートフォリオ,ペルソナ,ジャーニーマップ,サイトマップ,ワイヤーフレーム,モックアップ,コーディング">
+<meta name="author" content="五賀健太">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="img/favicon.ico">
+<title>GOGA TAKEHIRO | 住民票取得アシスト</title>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <header class="header">
+    <a href="profile.html" class="header__logo">
+      <span class="header__logo--accent">G</span>OGA
+      <span class="header__logo--accent">T</span>AKEHIRO
+    </a>
+    <nav class="header__nav" aria-label="メインナビゲーション" role="navigation">
+      <ul class="header__nav-list">
+        <li><a href="works.html" class="header__nav-link">作品集</a></li>
+        <li><a href="profile.html" class="header__nav-link">プロフィール</a></li>
+        <li><a href="learning.html" class="header__nav-link">学習</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article>
+      <section class="case-hero">
+        <div class="case-hero__intro">
+          <p class="case-hero__eyebrow">社会人の切実な悩みを解決する案内サイト</p>
+          <h1 class="intro__title">住民票取得アシスト</h1>
+          <p class="body-text">
+            2年次前期の授業「Webデザイン演習」で個人制作したWebサイトです。
+          </p>
+          <p class="body-text">
+            「多忙で中々時間を確保できない」といった課題を抱えている社会人をターゲットとし、わずかなタップ数で求めている情報に素早くアクセスできるUIを目指しました。
+          </p>
+
+          <hr class="divider">
+
+          <div class="tool-box">
+            <p class="tool-box__title">使用ツール</p>
+            <ul class="skills-list tool-list">
+              <li class="skill-badge tool-badge"><img src="img/figma-icon.png" alt="" class="badge">Figma</li>
+              <li class="skill-badge tool-badge"><img src="img/html-icon.png" alt="" class="badge">HTML</li>
+              <li class="skill-badge tool-badge"><img src="img/css-icon.png" alt="" class="badge">CSS</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case-hero__media">
+          <div class="top-bottom__center">
+            <ul class="hero-gallery-smartphone">
+              <li class="hero-gallery__item"><img src="img/jumin-home-thumb.png" alt="住民票取得アシストのホーム画面" class="hero-gallery__img hero-gallery__smartphone-img"></li>
+              <li class="hero-gallery__item"><img src="img/jumin-conbini-thumb.png" alt="住民票取得アシストのコンビニ取得方法案内画面" class="hero-gallery__img hero-gallery__smartphone-img"></li>
+              <li class="hero-gallery__item"><img src="img/jumin-window-thumb.png" alt="住民票取得アシストの窓口取得方法案内画面" class="hero-gallery__img hero-gallery__smartphone-img"></li>
+              <li class="hero-gallery__item"><img src="img/jumin-mail-thumb.png" alt="住民票取得アシストの郵送取得案内画面" class="hero-gallery__img hero-gallery__smartphone-img"></li>
+              <li class="hero-gallery__item"><img src="img/jumin-faq-thumb.png" alt="住民票取得アシストのFAQ画面" class="hero-gallery__img hero-gallery__smartphone-img"></li>
+              <li class="hero-gallery__item"><img src="img/jumin-comparison-thumb.png" alt="住民票取得アシストの各取得方法比較画面" class="hero-gallery__img hero-gallery__smartphone-img"></li>
+            </ul>
+          </div>
+          <div class="hero-cta-group">
+            <a href="jumin/home.html" target="_blank" rel="noopener noreferrer" class="btn btn--cta btn--cta--smartphone btn__hero--cta">現物を見る</a>
+            <a href="https://github.com/Takehiro-Goga/jumin" target="_blank" rel="noopener noreferrer" class="btn btn--cta">コードを見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="purpose-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>目的</h2>
+        <p class="body-text">
+          授業で指定されたテーマは特にありませんでしたが、どうせなら人が抱えている課題を解決するWebサイトを制作したいと考え、人が特に迷いやすいと言われる「住民票の取得」に必要な情報を提供するサイトを制作することにしました。
+        </p>
+        <p class="body-text">
+          スマートフォンで住民票の取得手続きに必要な情報へ効率よくアクセスできる体験の提供を目的として掲げました。
+        </p>
+      </section>
+
+      <hr class="divider">
+
+      <section class="process-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>デザインプロセス</h2>
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>1.ユーザー理解</h3>
+
+          <h4 class="subheading-plain">ペルソナ</h4>
+          <img src="img/jumin-persona.png" alt="ペルソナ" class="single-image">
+
+          <h4 class="subheading-plain">ユーザーストーリー</h4>
+          <p class="line-text">
+            都市部で働く多忙な社会人として、スマートフォンを用いて住民票の取得手続きに必要な情報へ素早くアクセスしたい。なぜなら、仕事や引っ越しの手続きに時間を割く必要があり、住民票の取得に無駄な時間をかけたくないからだ。
+          </p>
+
+          <h4 class="subheading-plain">ユーザージャーニーマップ</h4>
+          <img src="img/jumin-journey.png" alt="ユーザージャーニーマップ" class="single-image">
+
+          <h4 class="subheading-plain">ゴールステートメント</h4>
+          <p class="body-text body-text--no-indent work-content">以上を踏まえ、ゴールステートメントを作成しました。</p>
+          <p class="line-text">
+            「住民票取得サイトはユーザーに対して、スマートフォンを用いて住民票の取得手続きに必要な情報へ効率よくアクセスする体験を提供する。また、時間を有効に活用できるようにすることで、多忙な社会人のストレスを軽減する。」
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>2.サイトマップの作成</h3>
+          <img src="img/jumin-sitemap.png" alt="サイトマップ" class="single-image">
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>3.UI設計</h3>
+          <h4 class="subheading-plain">ワイヤーフレーム</h4>
+          <ul class="three-row-grid">
+            <li class="three-row-image-grid__item"><img src="img/jumin-wire-home.png" alt="ホームページのワイヤーフレーム" class="three-row-image-grid three-row-image-grid__vertical"></li>
+            <li class="three-row-image-grid__item"><img src="img/jumin-wire-conbini.png" alt="コンビニ取得案内ページのワイヤーフレーム" class="three-row-image-grid three-row-image-grid__vertical"></li>
+            <li class="three-row-image-grid__item"><img src="img/jumin-wire-window.png" alt="窓口取得案内ページのワイヤーフレーム" class="three-row-image-grid three-row-image-grid__vertical"></li>
+            <li class="three-row-image-grid__item"><img src="img/jumin-wire-mail.png" alt="郵送取得案内ページのワイヤーフレーム" class="three-row-image-grid three-row-image-grid__vertical"></li>
+            <li class="three-row-image-grid__item"><img src="img/jumin-wire-faq.png" alt="FAQページのワイヤーフレーム" class="three-row-image-grid three-row-image-grid__vertical"></li>
+            <li class="three-row-image-grid__item"><img src="img/jumin-wire-comparison.png" alt="各取得方法比較ページのワイヤーフレーム" class="three-row-image-grid three-row-image-grid__vertical"></li>
+          </ul>
+          <ul class="dash-list work-content">
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>シングルカラムレイアウトを採用することで、ユーザーを迷わせず、スマートフォンでの片手操作に最適化しています</li>
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>FAQページと各取得方法の比較ページに遷移するボタンを下部に配置することにより、ナビゲーションをシンプルにしています</li>
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>ホームには取得方法の診断フローチャートを配置することで、それぞれのユーザーに最適な取得方法を瞬時に判断できるようにしています</li>
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>各取得方法比較ページの比較表により、慎重に判断したいユーザーのニーズも満たせるようにしています</li>
+          </ul>
+
+          <h4 class="subheading-plain">カラー</h4>
+          <div class="color-list work-content">
+            <p class="color-row"><span class="color-row__label">ベースカラー</span><span class="color-row__line" style="background-color:#226FED"></span><span class="color-row__hex" style="color:#226FED">#226FED</span></p>
+            <p class="color-row"><span class="color-row__label">メインカラー</span><span class="color-row__line" style="background-color:#5C8CFF"></span><span class="color-row__hex" style="color:#5C8CFF">#5C8CFF</span></p>
+            <p class="color-row"><span class="color-row__label">アクセントカラー</span><span class="color-row__line" style="background-color:#FF8A00"></span><span class="color-row__hex" style="color:#FF8A00">#FF8A00</span></p>
+          </div>
+          <ul class="dash-list work-content">
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>行政系サイトのため、ブルーを基調として信頼感を出しています</li>
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>アクセントカラーには、ベースカラーの補色を利用することでメリハリをつけています</li>
+          </ul>
+
+          <h4 class="subheading-plain">フォント</h4>
+          <p class="body-text body-text--no-indent work-content">Noto Sans JP</p>
+          <ul class="dash-list work-content">
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>可読性を重視しています。</li>
+          </ul>
+
+          <h4 class="subheading-plain">モックアップ</h4>
+          <a href="https://www.figma.com/proto/7vJ0k6Yf0B0gmvN6G5cPhU/%E4%BD%8F%E6%B0%91%E7%A5%A8%E5%8F%96%E5%BE%97%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%88?node-id=1-5316&p=f&t=cObJdOVOYW8fO3Ti-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer" class="btn btn--cta work-content">モックアップを見る</a>
+
+          <ul class="dash-list work-content">
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>全てのページで画像を使用しないことにより、読み込みに要する時間を抑えています</li>
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>片手操作を考慮し、ワイヤーフレームにおける下部ボタンのレイアウトを、モックアップでは縦並びに変更しました</li>
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>下部ボタンに影をつけることで、ボタンであることを理解しやすくしています</li>
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>取得方法比較表は、ヘッダーと偶数行の色を濃くすることで視認性を向上させています</li>
+          </ul>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>4.コーディング</h3>
+          <a href="https://github.com/Takehiro-Goga/jumin" target="_blank" rel="noopener noreferrer" class="btn btn--cta work-content">コードを見る</a>
+          <p class="body-text body-text--no-indent work-content">
+            授業で学習した基本的な記法を中心に、HTMLとCSSを用いてコーディングを行い、モックアップをWebサイトとして実装しました。ボタンにアニメーションを適用し、レスポンシブにも対応させています。
+          </p>
+          <p class="body-text body-text--no-indent work-content">
+            コーディングでは、モックアップを作成した際に気づかなかった改善点を発見したため、改善を図りました。
+          </p>
+          <div class="two-row-image-grid-with-heading--smartphone work-content">
+            <div class="two-row-image-grid-with-heading__col">
+              <p class="two-row-image-grid-with-heading__label">Before</p>
+              <img src="img/jumin-before.png" alt="改善前" class="two-row-image-grid-with-heading__thumb--smartphone">
+            </div>
+            <div class="two-row-image-grid-with-heading__col">
+              <p class="two-row-image-grid-with-heading__label">After</p>
+              <img src="img/jumin-home-thumb.png" alt="改善後" class="two-row-image-grid-with-heading__thumb--smartphone">
+            </div>
+          </div>
+          <ul class="dash-list work-content">
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>背景色にベースカラーを使用すると刺激が強くなると考え、ホワイトに変更することで刺激を抑えています</li>
+            <li class="dash-list__item"><span class="dash-list__dash" aria-hidden="true">－</span>ロゴをナビゲーションバーの隣に配置するとボタンが小さくなり、操作性と視認性が悪化すると考え、ページの最上部に単独で配置しています</li>
+          </ul>
+          <a href="jumin/home.html" target="_blank" rel="noopener noreferrer" class="btn btn--cta work-content">現物を見る</a>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section class="learnings-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>獲得した学び</h2>
+        <p class="body-text">
+          授業では、サイトマップの作成とコーディングのみで要件は満たしていましたが、資格などの学習で得たUXデザインの知識やスキルを活かしたいと考え、ユーザー理解やUI設計も個人的に行いました。
+        </p>
+        <p class="body-text">
+          Webサイトは以前にも作成したことがありましたが、ユーザーの目線に立ってデザインしたことはなかったため、UXデザインを前提としたWebサイト制作を新たに経験することができました。制作を通して、何となく自己満足のデザインをするのではなく、ユーザーに与える影響を念頭に置いてデザインすることの重要性を学びました。特にUI設計の段階では、レイアウトや色、タイポグラフィなどを少し変更することで人間の感じ方が劇的に変化することを理解しました。また、HTMLとCSSによるコーディングでは、これまで曖昧であった基礎を固め、今後の学習基盤を確立できたと感じています。
+        </p>
+        <p class="body-text">
+          今後のWeb制作では今回得た学びを活かし、意図のある適切なUI設計によって人にやさしいデザインを心掛けていきたいと考えています。
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <h2 class="heading contact-heading">お問い合わせ</h2>
+    <ul class="contact__list">
+      <li>
+        <a href="mailto:takenonakakarabanbuugt83@gmail.com" class="btn contact-btn">
+          <img src="img/mail-icon.png" alt="" class="contact-btn__icon">
+          メール
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Wantedlyのページを見る">
+          <img src="img/wantedly-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Vivivitのページを見る">
+          <img src="img/vivivit-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <a href="#top" class="btn top-link">トップへ</a>
+</body>
+</html>

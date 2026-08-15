@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="家庭教師予約アプリの制作事例です。目的と、ユーザー理解や情報設計、UI設計など、これまでのデザインプロセスを紹介しています。">
+<meta name="keywords" content="家庭教師予約アプリ,UI/UXデザイン,UXデザイン,デザインプロセス,Figma,五賀健太,ポートフォリオ,ペルソナ,ジャーニーマップ,情報設計,サイトマップ,プロトタイプ,家庭教師,保護者,作品">
+<meta name="author" content="五賀健太">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="img/favicon.ico">
+<title>GOGA TAKEHIRO | 家庭教師予約アプリ</title>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <header class="header">
+    <a href="profile.html" class="header__logo">
+      <span class="header__logo--accent">G</span>OGA
+      <span class="header__logo--accent">T</span>AKEHIRO
+    </a>
+    <nav class="header__nav" aria-label="メインナビゲーション" role="navigation">
+      <ul class="header__nav-list">
+        <li><a href="works.html" class="header__nav-link">作品集</a></li>
+        <li><a href="profile.html" class="header__nav-link">プロフィール</a></li>
+        <li><a href="learning.html" class="header__nav-link">学習</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article>
+      <section class="case-hero">
+        <div class="case-hero__intro">
+          <p class="case-hero__eyebrow">保護者と家庭教師の両方に寄り添う</p>
+          <h1 class="intro__title">家庭教師予約アプリ</h1>
+          <p class="body-text body-text--no-indent">
+            現在、Google UX designプロフェッショナル認定のプログラムを通して、個人でデザインしているアプリです。保護者ユーザーと家庭教師ユーザーの両方に向けてデザインしています。
+          </p>
+
+          <hr class="divider">
+
+          <div class="tool-box">
+            <p class="tool-box__title">使用ツール</p>
+            <ul class="skills-list tool-list">
+              <li class="skill-badge tool-badge"><img src="img/figma-icon.png" alt="" class="tool-badge__icon badge">Figma</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case-hero__media">
+          <div class="top-bottom__center">
+            <img src="img/progress.png" alt="進行中のサムネイル" class="top-img">
+          </div>
+        </div>
+      </section>
+
+      <section class="purpose-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>目的</h2>
+        <p class="body-text body-text--no-indent">
+          UXデザインの学習として制作するため、自分が普段利用しないアプリを制作する方が学習効果が高いと考え、家庭教師予約アプリを制作することに決めました。家庭教師が生徒に最適な学習を提供し、保護者が家庭教師を安心して予約できるアプリのデザインを目的としています。
+        </p>
+      </section>
+
+      <hr class="divider">
+
+      <section class="process-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>デザインプロセス</h2>
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>1.ユーザー理解</h3>
+
+          <h4 class="subheading-plain">ユーザーインタビュー</h4>
+          <p class="body-text work-content">
+            ユーザーインタビューは、協力者を募ることが難しかったため、生成AIによってシミュレーションを行いました。方法としては、年齢と性別、条件をプロンプトとして入力し、ユーザーとして振舞うように指示をしました。その後は本来のユーザーインタビューと同様の手順でインタビューを行いました。
+          </p>
+          <p class="body-text work-content">
+            家庭教師と保護者でそれぞれ3人ずつ、家庭教師の予約に関するインタビューを行い、以下のような回答を得ました。
+          </p>
+          <div class="work-grid">
+            <div class="work-grid__col">
+              <p class="work-grid__title">保護者</p>
+              <ul class="work-grid__list">
+                <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>料金体系が理解しにくい</li>
+                <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>予約可能な日時を把握しづらい</li>
+                <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>初めて担当してもらう教師だと不安</li>
+              </ul>
+            </div>
+            <div class="work-grid__col">
+              <p class="work-grid__title">家庭教師</p>
+              <ul class="work-grid__list">
+                <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>料金体系を保護者に理解してもらえない</li>
+                <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>初めて担当する生徒の学習状況が事前に把握できない</li>
+                <li class="work-grid__list-item"><span class="work-grid__dash" aria-hidden="true">－</span>保護者との無駄なやり取りで、授業準備の時間が削られる</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 class="subheading-plain">ペルソナ</h4>
+          <ul class="image-grid">
+            <li class="image-grid__item"><img src="img/persona-parent.png" alt="保護者のペルソナ" class="image-grid__thumb"></li>
+            <li class="image-grid__item"><img src="img/persona-tutor.png" alt="家庭教師のペルソナ" class="image-grid__thumb"></li>
+          </ul>
+
+          <h4 class="subheading-plain">ユーザーストーリー</h4>
+          <div class="work-grid">
+            <div class="work-grid__col">
+              <p class="work-grid__title">鈴木恵</p>
+              <p class="work-grid__desc">仕事と家事を両立する母親として、子供の家庭教師を納得できる料金で柔軟に予約したい。なぜなら、安心できる教師に子供のやる気を引き出してほしいからだ。</p>
+            </div>
+            <div class="work-grid__col">
+              <p class="work-grid__title">高橋大輝</p>
+              <p class="work-grid__desc">フリーターをしている独身の家庭教師として、保護者が納得する料金で、万全の準備によって生徒に最適な学習を提供したい。なぜなら、保護者と生徒に信頼される教師でありたいからだ。</p>
+            </div>
+          </div>
+
+          <h4 class="subheading-plain">ユーザージャーニーマップ</h4>
+            <img src="img/journey-parent.png" alt="保護者のユーザージャーニーマップ" class="two-row-image-grid">
+            <img src="img/journey-tutor.png" alt="家庭教師のユーザージャーニーマップ" class="two-row-image-grid">
+
+          <h4 class="subheading-plain">ゴールステートメント</h4>
+          <p class="body-text body-text--no-indent work-content">以上を踏まえ、ゴールステートメントを作成しました。</p>
+          <div class="work-grid">
+            <div class="work-grid__col">
+              <p class="work-grid__title">保護者</p>
+              <p class="work-grid__desc">家庭教師予約アプリはユーザーに対して、安心できる家庭教師を納得の利用料金で柔軟に予約する体験を提供する。また、ユーザーが子供と相性が良い教師を見つけることで、子供の学習意欲を向上させる。</p>
+            </div>
+            <div class="work-grid__col">
+              <p class="work-grid__title">家庭教師</p>
+              <p class="work-grid__desc">家庭教師予約アプリはユーザーに対して、保護者が納得する料金で、万全の準備によって生徒に最適な学習を提供できるアプリ体験を提供する。また、ユーザーが保護者と生徒の両者にとって魅力的な授業を行うことで、教師としての信頼性を維持する。</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>2.情報設計</h3>
+
+          <h4 class="subheading-plain">How Might We</h4>
+          <ul class="hmw-grid">
+            <li class="hmw-grid__item">
+              <p class="hmw-grid__question">どうすれば、「理解しにくい」料金体系を、「シンプルな」料金体系に変えられるか</p>
+              <p class="hmw-grid__answer">家庭教師に料金体系を設定させない</p>
+            </li>
+            <li class="hmw-grid__item">
+              <p class="hmw-grid__question">どうすれば、家庭教師が1か月後までの空いている日時を設定できるか</p>
+              <p class="hmw-grid__answer">家庭教師にインセンティブを提示し、ナッジを適用する</p>
+            </li>
+            <li class="hmw-grid__item">
+              <p class="hmw-grid__question">どうすれば、保護者が無駄なメッセージを送らずに済むか</p>
+              <p class="hmw-grid__answer">保護者が得たい情報を事前に提供する</p>
+            </li>
+            <li class="hmw-grid__item">
+              <p class="hmw-grid__question">どうすれば、家庭教師が子供との相性に関する情報をプロフィールに設定できるか</p>
+              <p class="hmw-grid__answer">家庭教師にプロフィールの例を提示する</p>
+            </li>
+            <li class="hmw-grid__item">
+              <p class="hmw-grid__question">どうすれば、保護者が生徒の学習状況に関する情報を送信するか</p>
+              <p class="hmw-grid__answer">保護者に子供の学習状況に関する情報のテンプレートを提供する</p>
+            </li>
+          </ul>
+
+          <h4 class="subheading-plain">ユーザーフロー</h4>
+          <img src="img/flow-parent.png" alt="ユーザーフロー1" class="two-row-image-grid">
+          <img src="img/flow-tutor.png" alt="ユーザーフロー2" class="two-row-image-grid">
+
+          <h4 class="subheading-plain">サイトマップ</h4>
+          <img src="img/sitemap-parent.png" alt="サイトマップ1" class="two-row-image-grid"></li>
+          <img src="img/sitemap-tutor.png" alt="サイトマップ2" class="two-row-image-grid"></li>
+
+          <p class="body-text body-text--no-indent work-content">
+            ユーザー理解の段階で得た情報をもとに、最適な情報設計を考えました。デザイン思考のプロセスではHMWを用い、幅広いアイデアの創出を意識しています。ユーザーフローとサイトマップではユーザーを迷わせないために、無駄を省いて本当に必要としている機能に絞っています。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>3.UI設計</h3>
+
+          <h4 class="subheading-plain">ローファイプロトタイプ</h4>
+          <a href="https://www.figma.com/proto/7q7Hslx278uIdAjFguTeTb/%E5%AE%B6%E5%BA%AD%E6%95%99%E5%B8%AB%E4%BA%88%E7%B4%84%E3%82%A2%E3%83%97%E3%83%AA%E3%80%80%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97?t=oZS8FTfc65sPXSH1-1" target="_blank" rel="noopener noreferrer" class="btn btn--cta">プロトタイプを見る</a>
+          <p class="body-text body-text--no-indent work-content">
+          ユーザーが最短で目的を達成できる導線と、明確なマイクロコピーを意識し、HMWで創出したアイディアをUIに反映しています。
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <h2 class="heading contact-heading">お問い合わせ</h2>
+    <ul class="contact__list">
+      <li>
+        <a href="mailto:takenonakakarabanbuugt83@gmail.com" class="btn contact-btn">
+          <img src="img/mail-icon.png" alt="" class="contact-btn__icon">
+          メール
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Wantedlyのページを見る">
+          <img src="img/wantedly-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Vivivitのページを見る">
+          <img src="img/vivivit-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <a href="#top" class="btn top-link">トップへ</a>
+</body>
+</html>

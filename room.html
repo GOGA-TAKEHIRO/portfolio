@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="3DCGアニメーション「My Apartment Room」の制作事例です。目的と、モデリングやテクスチャリング、アニメーションやカメラワーク、レンダリングなどの制作プロセス、獲得した学びまでを紹介しています。">
+<meta name="keywords" content="My Apartment Room,3DCG,3DCGアニメーション,Blender,ブレンダー,制作プロセス,モデリング,テクスチャリング,カメラワーク,レンダリング,五賀健太,ポートフォリオ">
+<meta name="author" content="五賀健太">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="img/favicon.ico">
+<title>GOGA TAKEHIRO | My Apartment Room</title>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <header class="header">
+    <a href="profile.html" class="header__logo">
+      <span class="header__logo--accent">G</span>OGA
+      <span class="header__logo--accent">T</span>AKEHIRO
+    </a>
+    <nav class="header__nav" aria-label="メインナビゲーション" role="navigation">
+      <ul class="header__nav-list">
+        <li><a href="works.html" class="header__nav-link">作品集</a></li>
+        <li><a href="profile.html" class="header__nav-link">プロフィール</a></li>
+        <li><a href="learning.html" class="header__nav-link">学習</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article>
+      <section class="case-hero">
+        <div class="case-hero__intro">
+          <p class="case-hero__eyebrow">自分の部屋を忠実に再現した3DCGアニメーション作品</p>
+          <h1 class="intro__title">「My Apartment Room」</h1>
+          <p class="body-text">
+            1年次後期の授業「コンピュータグラフィックス論」で個人制作した3DCGアニメーションです。100以上のオブジェクトを作成し、自分の部屋をできる限り忠実に再現しています。
+          </p>
+          <p class="body-text">
+            制作全体で300時間以上を要しました。
+          </p>
+
+          <hr class="divider">
+
+          <div class="tool-box">
+            <p class="tool-box__title">使用ツール</p>
+            <ul class="skills-list tool-list">
+              <li class="skill-badge tool-badge"><img src="img/blender-icon.png" alt="" class="badge">Blender</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="case-hero__media">
+          <div class="top-bottom__center">
+            <ul class="hero-gallery-normal">
+              <li class="hero-gallery__item"><img src="img/room-topimg-kitchen.png" alt="キッチン" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/room-topimg-bathroom.png" alt="風呂場" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/room-topimg-toilet.png" alt="トイレ" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/room-topimg-living1.png" alt="リビング1" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/room-topimg-strage.png" alt="物置" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/room-topimg-bed.png" alt="寝床" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/room-topimg-living2.png" alt="リビング2" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/room-topimg-desk.png" alt="デスク" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/room-topimg-light.png" alt="デスクライト" class="hero-gallery__img"></li>
+              <li class="hero-gallery__item"><img src="img/room-topimg-pc.png" alt="ノートPC" class="hero-gallery__img"></li>
+            </ul>
+          </div>
+
+          <a href="#" class="btn btn--cta btn__hero--cta">アニメーションを再生</a>
+        </div>
+      </section>
+
+      <section class="purpose-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>目的</h2>
+        <p class="body-text">
+          授業では「自分の部屋を3DCGアニメーションによって表現する」というテーマが与えられましたが、私は1ルームアパートに住んでいるため、どうせなら1ルーム全体を忠実に再現したアニメーションを作成したいと考え、制作に取り掛かりました。
+        </p>
+        <p class="body-text">
+          CG制作は完全に未経験であったため、自分の部屋のあまり綺麗ではない部分までの隅々を表現することで、モデラーによるCG制作の基礎を習得することを目的として掲げました。
+        </p>
+      </section>
+
+      <hr class="divider">
+
+      <section class="process-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>制作プロセス</h2>
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>1.モデリング</h3>
+          <ul class="three-row-grid">
+            <li><img src="img/room-modeling-washing.png" alt="洗濯機のモデリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-modeling-microwave.png" alt="電子レンジのモデリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-modeling-dishes.png" alt="皿のモデリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-modeling-socks.png" alt="靴下のモデリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-modeling-trash.png" alt="ゴミのモデリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-modeling-toilet.png" alt="トイレのモデリング画面" class="three-row-image-grid"></li>
+          </ul>
+          <p class="body-text body-text--no-indent work-content">
+            洗濯機や電子レンジ、食器、靴下、ゴミ、トイレなど、大きい物から小さいものまで、部屋にある様々な物をモデリングしています。大きさの整合性を保つため、実際の大きさを定規で測って反映させています。Blenderの基本的な機能によって忠実な表現を心掛けました。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>2.テクスチャリング</h3>
+          <ul class="three-row-grid">
+            <li><img src="img/room-texturing-washing.png" alt="洗濯機のテクスチャリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-texturing-microwave.png" alt="電子レンジのテクスチャリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-texturing-dishes.png" alt="皿のテクスチャリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-texturing-socks.png" alt="靴下のテクスチャリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-texturing-trash.png" alt="ゴミのテクスチャリング画面" class="three-row-image-grid"></li>
+            <li><img src="img/room-texturing-toilet.png" alt="トイレのテクスチャリング画面" class="three-row-image-grid"></li>
+          </ul>
+          <p class="body-text body-text--no-indent work-content">
+            実際の物の写真を正面と後ろ、横、上から撮影し、モデリングしたオブジェクトに貼り付けることで、より現実に近い見た目を重視してテクスチャリングしています。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>3.アニメーション</h3>
+          <div class="video-stack work-content">
+            <img src="img/room-animation-door.gif" alt="開閉するドアのアニメーション" class="single-image room__animation">
+            <img src="img/room-animation-water.gif" alt="流れる水のアニメーション" class="single-image room__animation">
+            <img src="img/room-animation-towel.gif" alt="タオルをめくるアニメーション" class="single-image room__animation">
+          </div>
+          <p class="body-text body-text--no-indent work-content">
+            ドアの開閉や水の流れ、タオルをめくる動作などをアニメーションで表現しています。特に、タオルをめくる動作には物理演算を使用しており、摩擦や減衰などの値を詳細に設定することで、よりリアルな布の表現に力を入れています。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>4.カメラワーク</h3>
+          <ul class="three-row-grid">
+            <li><img src="img/room-camera-kitchen.png" alt="キッチンシーンを映すシーンのカメラ" class="three-row-image-grid camera__grid"></li>
+            <li><img src="img/room-camera-controler.png" alt="コントローラーを映すシーンのカメラ" class="three-row-image-grid camera__grid"></li>
+            <li><img src="img/room-camera-bed.png" alt="寝床を映すシーンのカメラ" class="three-row-image-grid camera__grid"></li>
+          </ul>
+          <p class="body-text body-text--no-indent work-content">
+            カメラに対してキーフレームを打ち、シーンに合わせて場所やアングルを変更しています。見せたい場所をしっかり見せるため、角度やスピードなどを微調整することで、適切なカメラワークを意識しています。
+          </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="process-step">
+          <h3 class="heading heading--sub"><span class="section__sub-bar" aria-hidden="true"></span>5.レンダリング</h3>
+          <p class="body-text body-text--no-indent work-content">
+            オブジェクトの数が非常に多く、フレーム数は5000以上であるため処理に時間がかかり、1回のレンダリングには約20時間を要しました。アニメーションが上手く反映されないことや、光の当たり方に生じた不満などによりレンダリングをやり直し、何度も試行錯誤を繰り返しました。
+          </p>
+          <a href="#" class="btn btn--cta work-content">アニメーションを再生</a>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section class="learnings-section">
+        <h2 class="heading"><span class="heading__bar" aria-hidden="true"></span>獲得した学び</h2>
+        <p class="body-text">
+          たくさんのオブジェクトを作成することには気が遠くなるような作業量を伴いましたが、それぞれのプロセスで確実に技術が向上したと考えています。
+        </p>
+        <p class="body-text">
+          初めての経験であったため、失敗をすることが多々ありましたが、その度に解決法を学び、ある程度はBlenderを使いこなせるようになりました。特に、モデリングの段階では様々な形を表現することで、複雑な形も正確にモデリングできるようになりました。また、制作を通し、日常的に目にする3DCGが作られる過程について、深く理解することができました。
+        </p>
+        <p class="body-text">
+          近年ではWeb制作において、Three.jsやWebGLによる3D表現が増加しています。今回得た学びを活かし、今後はWebにおける3D表現についても学習することで、表現の幅を広げていきたいと考えています。
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <h2 class="heading contact-heading">お問い合わせ</h2>
+    <ul class="contact__list">
+      <li>
+        <a href="mailto:takenonakakarabanbuugt83@gmail.com" class="btn contact-btn">
+          <img src="img/mail-icon.png" alt="" class="contact-btn__icon">
+          メール
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Wantedlyのページを見る">
+          <img src="img/wantedly-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn contact-btn" aria-label="Vivivitのページを見る">
+          <img src="img/vivivit-logo.png" alt="" class="contact-btn__logo">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <a href="#top" class="btn top-link">トップへ</a>
+</body>
+</html>
