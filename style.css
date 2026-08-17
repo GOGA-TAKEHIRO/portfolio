@@ -315,7 +315,7 @@ img {
 
 .two-row-image-grid {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: contain;
   margin-top: var(--small-space);
 }
