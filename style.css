@@ -235,7 +235,6 @@ ul {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: var(--small-space);
-  justify-content: center;
 }
 
 .work-grid__list {
