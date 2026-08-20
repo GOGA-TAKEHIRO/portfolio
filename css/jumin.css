@@ -1,0 +1,26 @@
+.color-list {
+    border-left: 2px solid var(--color-purple);
+    padding-left: var(--small-space);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: var(--big-space);
+}
+
+.color-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: var(--small-font);
+}
+
+.color-row__line {
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+}
+
+.color-row__hex {
+    font-size: var(--midium-font);
+    font-weight: var(--semi-bold-font);
+}

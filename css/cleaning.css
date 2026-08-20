@@ -1,0 +1,32 @@
+.work-grid--three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.work-grid__thumb {
+    width: 100%;
+    object-fit: contain;
+}
+
+.two-row-image-grid-with-heading__under-thumb{
+    margin-top: var(--big-space);
+}
+
+.ordered-list {
+    list-style: decimal;
+    padding-left: 20px;
+    font-size: var(--small-font);
+    line-height: var(--line-height);
+}
+
+/* レスポンシブ */
+@media (max-width: 1024px) {
+    .work-grid--three {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .work-grid--three {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

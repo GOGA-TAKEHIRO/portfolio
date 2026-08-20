@@ -1,0 +1,66 @@
+.body-text {
+    font-size: var(--small-font);
+    line-height: var(--line-height);
+    text-indent: 1em;
+    margin-bottom: var(--small-space);
+}
+
+.body-text:last-child {
+    margin-bottom: 0;
+}
+
+.body-text--no-indent {
+    text-indent: 0;
+}
+
+.work-content {
+    padding-left: var(--big-space);
+    margin-top: var(--small-space);
+}
+
+.line-text {
+    border-left: 2px solid var(--color-purple);
+    padding-left: var(--small-space);
+    margin-left: var(--small-space);
+    font-size: var(--small-font);
+    line-height: var(--line-height);
+}
+
+.top-bottom__center{
+    flex: 1;               
+    display: flex;
+    align-items: center; 
+}
+
+.case-hero__eyebrow {
+    font-size: var(--big-font);
+    font-weight: var(--thin-font);
+    margin-bottom: 8px;
+}
+
+.text-grid__desc {
+    font-size: var(--small-font);
+    line-height: var(--line-height);
+}
+
+.work-grid__desc {
+    font-size: var(--small-font);
+    line-height: var(--line-height);
+}
+
+/* レスポンシブ */
+@media (max-width: 1024px) {
+    .case-hero__eyebrow {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .work-content {
+        padding-left: 0;
+    }
+
+    .line-text {
+        margin-left: 0;
+    }
+}

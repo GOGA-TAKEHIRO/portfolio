@@ -1,0 +1,83 @@
+/* --- イントロ --- */
+.profile-affiliation {
+    font-size: var(--small-font);
+    font-weight: var(--thin-font);
+    margin-bottom: 12px;
+}
+
+.profile-name {
+    font-size: 32px;
+    font-weight: var(--bold-font);
+    margin-bottom: var(--small-space);
+    text-decoration-thickness: 4px;
+}
+
+.profile-name ruby {
+    ruby-align: center;
+}
+
+.profile-name rt {
+    font-size: var(--small-font);
+    font-weight: var(--thin-font);
+    color: var(--color-text);
+    letter-spacing: 0.1em;
+}
+
+.text-accent {
+    color: var(--color-purple);
+}
+
+/* --- 経緯 --- */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.timeline__item {
+    border-left: 2px solid var(--color-purple);
+    padding-left: var(--small-space);
+}
+
+.timeline__period {
+    font-size: var(--small-font);
+    font-weight: var(--thin-font);
+    margin-bottom: 4px;
+    display: flex;
+    gap: 10px;
+}
+
+.timeline__desc {
+    font-size: var(--small-font);
+    line-height: var(--line-height);
+}
+
+.timeline__badge {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px ;
+}
+
+/* --- 資格 --- */
+.qualifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: var(--small-space);
+}
+
+.qualifications-list__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--small-font);
+}
+
+.qualifications-list__dash {
+    color: var(--color-purple);
+    font-weight: var(--semi-bold-font);
+}
+
+.qualifications-note {
+    margin-top: var(--big-space);
+}

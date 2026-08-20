@@ -1,0 +1,17 @@
+.amethyst__top-img{
+    max-height: 320px;
+    border: 6px solid var(--color-gray);
+    object-fit: cover;
+}
+
+.amethyst-animation{
+    border: 6px solid var(--color-gray);
+    object-fit: cover;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.two-row-image-grid-with-heading__thumb--amethyst-animation{
+    border: 6px solid var(--color-gray);
+}

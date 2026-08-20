@@ -1,0 +1,68 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: var(--small-font);
+    font-weight: var(--semi-bold-font);
+}
+
+.btn--cta {
+    display: inline-flex;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    font-size: var(--small-font);
+    padding: var(--small-space);
+    margin-left: var(--big-space);
+    min-width: 140px;
+}
+
+.btn__hero--cta {
+    margin-left: 0;
+}
+
+.hero-cta-group {
+    display: flex;
+    margin-left: 0;
+}
+
+.contact-btn {
+    gap: 10px;
+    min-width: 130px;
+    height: 56px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+}
+
+/* レスポンシブ */
+@media (min-width: 1025px) {
+    .contact-btn:hover, 
+    .btn--cta:hover {
+        transform: translateY(-1px);
+        box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-btn:active {
+        transform: translateY(1px);
+        background-color: #6500ad;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .btn {
+        width: 100%;
+    }
+
+    .btn--cta,
+    .line-text,
+    .dash-list {
+        margin-left: 0;
+    }
+
+    .hero-cta-group {
+        gap: 30px;
+    }
+}

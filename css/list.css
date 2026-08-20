@@ -1,0 +1,74 @@
+ul {
+    list-style: none;
+}
+
+.dash-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: var(--big-space);
+}
+
+.dash-list__item {
+    display: flex;
+    gap: 8px;
+    font-size: var(--small-font);
+}
+
+.dash-list__dash {
+    color: var(--color-purple);
+    font-weight: var(--semi-bold-font);
+    flex-shrink: 0;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: var(--small-space);
+}
+
+.work-grid__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.work-grid__list-item {
+    display: flex;
+    gap: 8px;
+    font-size: var(--small-font);
+}
+
+.work-grid__dash {
+    color: var(--color-purple);
+    font-weight: var(--semi-bold-font);
+    flex-shrink: 0;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* レスポンシブ */
+@media (max-width: 700px) {
+    .header__nav-list {
+        gap: 24px;
+    }
+
+    .contact__list {
+        flex-direction: column;
+    }
+
+    .dash-list {
+        margin-left: 0;
+    }
+}

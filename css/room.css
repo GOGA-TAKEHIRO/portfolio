@@ -1,0 +1,16 @@
+.video-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.camera__grid{
+    max-height: 270px;
+}
+
+.room__animation{
+    border: 6px solid var(--color-text);
+    object-fit: cover;
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,5 @@
+.magician__top-img{
+    max-height: 320px;
+    border: 6px solid var(--color-text);
+    object-fit: cover;
+}
