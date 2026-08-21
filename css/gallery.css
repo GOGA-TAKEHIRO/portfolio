@@ -1,36 +1,30 @@
-.hero-gallery-smartphone::-webkit-scrollbar,
-.hero-gallery-normal::-webkit-scrollbar {
+.hero-gallery::-webkit-scrollbar {
     height: 20px;
 }
 
-.hero-gallery-smartphone::-webkit-scrollbar-button,
-.hero-gallery-normal::-webkit-scrollbar-button {
+.hero-gallery::-webkit-scrollbar-button {
     display: none;
 }
 
-.hero-gallery-smartphone::-webkit-scrollbar-track,
-.hero-gallery-normal::-webkit-scrollbar-track {
+.hero-gallery::-webkit-scrollbar-track {
     background-color: var(--color-border);
     border-radius: 5px;
 }
 
-.hero-gallery-smartphone::-webkit-scrollbar-thumb,
-.hero-gallery-normal::-webkit-scrollbar-thumb {
+.hero-gallery::-webkit-scrollbar-thumb {
     background-color: var(--color-purple);
     border-radius: 5px;
 }
 
 /* レスポンシブ */
 @media (min-width: 901px) {
-    .hero-gallery-smartphone::-webkit-scrollbar-thumb:hover,
-    .hero-gallery-normal::-webkit-scrollbar-thumb:hover{
+    .hero-gallery::-webkit-scrollbar-thumb:hover {
         background-color: #6500ad;
     }
 }
 
 @media (max-width: 900px) {
-    .hero-gallery-smartphone::-webkit-scrollbar,
-    .hero-gallery-normal::-webkit-scrollbar {
+    .hero-gallery::-webkit-scrollbar {
         display: none;
     }
 }

@@ -45,9 +45,12 @@
     gap: 24px;
 }
 
-.text-grid {
+.grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.text-grid {
     gap: 50px 40px;
     margin-top: var(--small-space);
 }
@@ -60,8 +63,6 @@
 }
 
 .work-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 70px 40px;
     margin-left: var(--big-space);
     margin-bottom: var(--small-space);
@@ -75,8 +76,6 @@
 }
 
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 32px 40px;
     margin-left: var(--big-space);
     margin-bottom: var(--small-space);
@@ -114,23 +113,20 @@
     margin: 0 auto;
 }
 
-.hero-gallery-smartphone {
+.hero-gallery {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-padding-left: 0;
     padding-bottom: 12px;
     gap: 16px;
+}
+
+.hero-gallery-smartphone {
     max-width: 310px;
 }
 
 .hero-gallery-normal{
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: 0;
-    padding-bottom: 12px;
-    gap: 16px;
     max-width: 600px;
 }
 
