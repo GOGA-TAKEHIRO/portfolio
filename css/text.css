@@ -32,7 +32,7 @@
     align-items: center; 
 }
 
-.case-hero__eyebrow {
+.heading__eyebrow {
     font-size: var(--big-font);
     font-weight: var(--thin-font);
     margin-bottom: 8px;
@@ -50,7 +50,7 @@
 
 /* レスポンシブ */
 @media (max-width: 1024px) {
-    .case-hero__eyebrow {
+    .heading__eyebrow {
         font-size: 20px;
     }
 }

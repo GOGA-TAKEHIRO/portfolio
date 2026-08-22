@@ -17,13 +17,13 @@
 }
 
 /* レスポンシブ */
-@media (min-width: 901px) {
+@media (min-width: 1025px) {
     .hero-gallery::-webkit-scrollbar-thumb:hover {
         background-color: #6500ad;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .hero-gallery::-webkit-scrollbar {
         display: none;
     }

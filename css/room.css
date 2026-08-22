@@ -4,13 +4,20 @@
     gap: 200px;
 }
 
-.camera__grid{
+.camera__grid {
     max-height: 270px;
 }
 
-.room__animation{
+.room__animation {
     border: 6px solid var(--color-text);
     object-fit: cover;
     width: 80%;
     margin: 0 auto;
+}
+
+/* レスポンシブ */
+@media (max-width: 1024px) {
+    .camera__grid{
+        max-height: 90%;
+    }
 }

@@ -83,10 +83,6 @@
 }
 
 @media (max-width: 700px) {
-    .intro__title {
-      font-size: var(--big-font);
-    }
-
     .heading--sub,
     .subheading-plain {
       margin-left: 0;

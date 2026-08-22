@@ -22,6 +22,10 @@
 
 .works-grid--three {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    font-size: 20px;
+    color: var(--color-text);
+    flex-shrink: 0;
+    margin-right: 10px;
 }
 
 .work-card {
@@ -71,14 +75,6 @@
     color: var(--color-text);
     flex-shrink: 0;
     margin-right: var(--small-space);
-}
-
-.works-grid--three,
-.work-card__arrow {
-    font-size: 20px;
-    color: var(--color-text);
-    flex-shrink: 0;
-    margin-right: 10px;
 }
 
 .work-card__tags {

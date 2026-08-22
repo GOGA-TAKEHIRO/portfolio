@@ -131,16 +131,16 @@
 }
 
 /* レスポンシブ */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .three-row-grid {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         margin-left: 0;
-}
+    }
 
     .two-row-image-grid-with-heading,
     .two-row-image-grid-with-heading--smartphone {
-        grid-template-columns: minmax(0, 1fr);
-}
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
     .case-hero {
         grid-template-columns: minmax(0, 1fr);
@@ -172,5 +172,15 @@
     .image-grid {
         grid-template-columns: minmax(0, 1fr);
         margin-left: 0;
+    }
+
+    .three-row-grid {
+        grid-template-columns: minmax(0, 1fr);
+        margin-left: 0;
+    }
+
+    .two-row-image-grid-with-heading,
+    .two-row-image-grid-with-heading--smartphone {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
