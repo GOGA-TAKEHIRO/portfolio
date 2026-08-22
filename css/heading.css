@@ -87,4 +87,8 @@
     .subheading-plain {
       margin-left: 0;
     }
+
+    .profile-heading--long{
+      font-size: var(--small-font);
+    }
 }
