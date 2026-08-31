@@ -40,6 +40,10 @@
   background-color: var(--color-purple);
 }
 
+.heading__bar--two {
+  height: 50px;
+}
+
 .section__sub-bar {
   display: inline-block;
   width: 6px;
