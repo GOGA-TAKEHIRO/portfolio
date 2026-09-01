@@ -13,6 +13,20 @@
     text-indent: 0;
 }
 
+.intro {
+    padding-top: var(--big-space);
+    padding-bottom: var(--big-space);
+}
+
+.intro__lead {
+    font-size: var(--small-font);
+    font-weight: var(--thin-font);
+    color: var(--color-text);
+    line-height: var(--line-height);
+    margin-bottom: var(--small-space);
+    font-style: italic;
+}
+
 .work-content {
     padding-left: var(--big-space);
     margin-top: var(--small-space);

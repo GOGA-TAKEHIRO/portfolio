@@ -1,16 +1,3 @@
-.intro {
-    padding-top: var(--big-space);
-    padding-bottom: var(--big-space);
-}
-
-.intro__lead {
-    font-size: var(--small-font);
-    font-weight: var(--thin-font);
-    color: var(--color-text);
-    line-height: var(--line-height);
-    margin-bottom: var(--small-space);
-}
-
 .works-grid {
     display: grid;
     gap: 32px;
