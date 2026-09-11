@@ -14,6 +14,7 @@
     padding: var(--small-space);
     margin-left: var(--big-space);
     min-width: 140px;
+    border: 3px solid var(--color-text);
 }
 
 .btn__hero--cta {
@@ -31,6 +32,7 @@
     height: 56px;
     background-color: var(--color-purple);
     color: var(--color-white);
+    border: 3px solid var(--color-text);
 }
 
 /* レスポンシブ */
