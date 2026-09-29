@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .tool-box {
     border: 3px solid var(--color-text);
     border-radius: 6px;

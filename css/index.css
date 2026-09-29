@@ -1,8 +1,10 @@
+@charset "utf-8";
+
 /* --- イントロ --- */
 .profile-affiliation {
     font-size: var(--small-font);
     font-weight: var(--thin-font);
-    margin-bottom: 12px;
+    margin-bottom: var(--big-space)
 }
 
 .profile-name {

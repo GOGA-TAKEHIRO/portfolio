@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .hero-gallery::-webkit-scrollbar {
     height: 20px;
 }

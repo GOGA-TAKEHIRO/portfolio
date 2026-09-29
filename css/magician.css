@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .magician__top-img{
     max-height: 320px;
     border: 6px solid var(--color-text);

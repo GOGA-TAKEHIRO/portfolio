@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .color-list {
     border-left: 2px solid var(--color-purple);
     padding-left: var(--small-space);

@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .roadmap {
     display: flex;
     flex-direction: column;

@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .body-text {
     font-size: var(--small-font);
     line-height: var(--line-height);

@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .video-stack {
     display: flex;
     flex-direction: column;
